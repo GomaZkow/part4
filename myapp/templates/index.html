@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пользователи и комментарии</title>
+
+    <script src="{% static 'myapp/script.js' %}" defer></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+  <div id="fifteen-comments">
+            <h2>15 Комментов</h2>
+            <ul id="fifteen-comments-list"></ul>
+        </div>
+  <div>
+      <h2>Список юзеров не стал делать тк и так внизу используется.15комов вывел тк юзеров 10 по сути</h2>
+
+  </div>
+    <div class="container">
+        <h1>юзеры</h1>
+        <ul id="user-list"></ul>
+
+        <div id="user-details" style="display: none;">
+            <h2 id="user-name"></h2>
+            <p id="user-email"></p>
+            <h3>коммы</h3>
+            <ul id="comments-list"></ul>
+            <button class="back-button" onclick="toggleView('user-list')">назад</button>
+        </div>
+
+
+    </div>
+</body>
+</html>
